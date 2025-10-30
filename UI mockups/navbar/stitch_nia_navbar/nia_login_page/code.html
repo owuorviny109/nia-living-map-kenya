@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login - Nia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0c5a33",
+              "background-light": "#f6f8f7",
+              "background-dark": "#112119",
+              "terracotta": "#E2725B"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .g-logo {
+            width: 20px;
+            height: 20px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"><path fill="%23FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="%23FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="%234CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.223,0-9.657-3.344-11.303-7.962l-6.571,4.819C9.656,39.663,16.318,44,24,44z"/><path fill="%231976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.574l6.19,5.238C42.021,35.591,44,30.134,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 flex flex-1 justify-center items-center py-10 sm:py-20">
+<div class="layout-content-container flex flex-col w-full max-w-md">
+<div class="bg-white dark:bg-background-dark shadow-lg rounded-xl p-6 sm:p-10 border border-gray-200 dark:border-gray-700/50">
+<div class="flex flex-col items-center gap-4 mb-8">
+<div class="w-full flex justify-center bg-center bg-no-repeat bg-cover aspect-[4/1] max-w-[120px]" data-alt="Nia Logo, a stylized representation of the brand" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3TvOGXGrL7prLuHNEeHuy7mxYuMRlD9eARUU7rjpreiG9uvhV7RF-iXDKmpwXDxGdUXekW828toHawnGPBWxRfVNPbAq-v30xzMt3k6t_QX5lMuWp8FzdKEIPGkWa7LPKWLRaJ8EChAuoIg-l-wJlzXl3vPCl7JvY2yjXOIuLYrUavuKPaLZORYXauF7z9uftioIb7kNdUcf_AOj16D_FFFjE5VlTj3YYDwobGsyr9jdL13faHToOUFVNzSFCMBfNYM-z94afaX8");'></div>
+<div class="flex min-w-72 flex-col gap-2 text-center">
+<p class="text-[#111714] dark:text-gray-100 text-3xl font-black leading-tight tracking-[-0.033em]">Log in to Nia</p>
+<p class="text-[#648775] dark:text-gray-400 text-base font-normal leading-normal">Welcome back! Please enter your details.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<label class="flex flex-col flex-1">
+<p class="text-[#111714] dark:text-gray-200 text-sm font-medium leading-normal pb-2">Email</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111714] dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary/50 border border-[#dce5e0] dark:border-gray-700 bg-white dark:bg-gray-800/50 h-12 placeholder:text-[#648775] dark:placeholder:text-gray-500 p-3 text-base font-normal leading-normal" placeholder="Enter your email" type="email" value=""/>
+</label>
+<div class="flex flex-col">
+<label class="flex flex-col flex-1">
+<p class="text-[#111714] dark:text-gray-200 text-sm font-medium leading-normal pb-2">Password</p>
+<div class="flex w-full flex-1 items-stretch">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111714] dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary/50 border border-[#dce5e0] dark:border-gray-700 bg-white dark:bg-gray-800/50 h-12 placeholder:text-[#648775] dark:placeholder:text-gray-500 p-3 rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal" placeholder="Enter your password" type="password" value=""/>
+<div class="text-[#648775] dark:text-gray-400 flex border border-[#dce5e0] dark:border-gray-700 bg-white dark:bg-gray-800/50 items-center justify-center px-3 rounded-r-lg border-l-0">
+<span class="material-symbols-outlined" style="font-size: 20px;">visibility</span>
+</div>
+</div>
+</label>
+<a class="text-right text-primary dark:text-terracotta hover:underline text-sm font-medium leading-normal pt-2" href="#">Forgot Password?</a>
+</div>
+</div>
+<button class="flex items-center justify-center font-bold text-base text-white h-12 px-6 rounded-lg w-full bg-primary hover:bg-primary/90 transition-colors mt-6">Login</button>
+<div class="flex items-center gap-4 my-6">
+<hr class="flex-1 border-gray-200 dark:border-gray-700"/>
+<p class="text-sm text-gray-500 dark:text-gray-400">or continue with</p>
+<hr class="flex-1 border-gray-200 dark:border-gray-700"/>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex items-center justify-center gap-2 font-semibold text-sm text-[#111714] dark:text-gray-200 h-12 px-6 rounded-lg w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800/50 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<span class="g-logo"></span>
+                            Login with Google
+                        </button>
+<button class="flex items-center justify-center gap-2 font-semibold text-sm text-[#111714] dark:text-gray-200 h-12 px-6 rounded-lg w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800/50 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<svg aria-hidden="true" class="w-5 h-5" fill="#1877F2" viewbox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-1.5c-1 0-1.5.5-1.5 1.5V12h3l-.5 3h-2.5v6.8c4.56-.93 8-4.96 8-9.8z"></path></svg>
+                            Login with Facebook
+                        </button>
+</div>
+<p class="text-[#648775] dark:text-gray-400 text-sm font-normal leading-normal text-center mt-8">Don't have an account? <a class="font-bold text-primary dark:text-terracotta hover:underline" href="#">Create an Account</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

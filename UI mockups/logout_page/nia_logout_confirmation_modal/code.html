@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nia - Logout Confirmation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ea2a33", // Original primary color - will be overridden by user's theme
+            "terracotta": "#E2725B",
+            "sand": "#F4E8D8",
+            "acacia-green": "#3E5B41",
+            "charcoal": "#333333",
+            "text-gray": "#6B7280",
+            "background-light": "#f8f6f6",
+            "background-dark": "#211111",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark">
+<div 100%25\'="" class="relative flex min-h-screen w-full flex-col font-display group/design-root" cx="\'1.5\'" cy="\'1.5\'" fill="\'url(%23p)\'" fill-opacity="\'0.05\'/%3E%3C/svg%3E&quot;);'" height="\'100%25\'" id="\'p\'" patternunits="\'userSpaceOnUse\'%3E%3Ccircle" r="\'1.5\'" style='background-image: url("data:image/svg+xml,%3Csvg width=\' width="\'100%25\'" xmlns="\'http://www.w3.org/2000/svg\'%3E%3Cdefs%3E%3Cpattern">
+<!-- Semi-transparent overlay/scrim -->
+<div class="fixed inset-0 z-40 bg-black/50"></div>
+<!-- Main modal container -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4">
+<div class="relative w-full max-w-md transform rounded-xl bg-sand shadow-2xl transition-all">
+<!-- Close button (optional) -->
+<button class="absolute top-4 right-4 text-text-gray hover:text-charcoal">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+<!-- Modal Content -->
+<div class="flex flex-col items-center justify-center p-8 text-center sm:p-10">
+<div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-terracotta/10">
+<span class="material-symbols-outlined text-4xl text-terracotta" data-icon="logout">logout</span>
+</div>
+<!-- HeadlineText component modified -->
+<h3 class="text-charcoal text-2xl font-bold leading-tight tracking-tight">Are you sure you want to log out?</h3>
+<p class="mt-2 text-base text-text-gray">You will be returned to the homepage.</p>
+<!-- ButtonGroup component modified -->
+<div class="mt-8 flex w-full flex-col-reverse gap-3 sm:flex-row">
+<button class="flex h-12 w-full min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[#E5E7EB] px-5 text-base font-bold leading-normal tracking-[0.015em] text-charcoal transition-colors hover:bg-[#D1D5DB]">
+<span class="truncate">Cancel</span>
+</button>
+<button class="flex h-12 w-full min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-terracotta px-5 text-base font-bold leading-normal tracking-[0.015em] text-white transition-colors hover:bg-[#D6604A]">
+<span class="truncate">Log Out</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
